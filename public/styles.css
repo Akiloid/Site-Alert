@@ -1,0 +1,118 @@
+/* Reset some default styles */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,800");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color */
+body {
+  background-color: #7a4790; /* Light gray background */
+  font-family: Arial, sans-serif; /* Use a sans-serif font */
+  color: #333; /* Dark text color */
+  background-image: url("https://static.vecteezy.com/system/resources/previews/001/841/778/original/light-purple-background-with-bubbles-vector.jpg");
+  background-size: 1700px;
+}
+
+/* Container for the layout */
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Left panel */
+.left-panel {
+  flex: 1;
+  height: 100vh;
+  background-color: #500770; /* Blue background */
+  color: #fff; /* White text color */
+  padding: 20px;
+  /* vertical-align: middle; */
+  line-height: 50px;
+}
+
+/* Right panel */
+.right-panel {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(13.1px);
+  -webkit-backdrop-filter: blur(13.1px);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+/* Headings */
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Text */
+#description {
+  padding: 40px;
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: monospace;
+}
+
+#disclaimer {
+  color: #888888;
+  padding: 10px;
+}
+
+/* Input field */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Start button */
+#startbtn {
+  background-color: #500770; /* Blue button color */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#startbtn:hover {
+  background-color: #010405; /* Darker blue on hover */
+}
+
+img {
+  height: auto;
+  max-width: 400px; /* Adjust the size as needed */
+}
